@@ -4,6 +4,7 @@ class Restaurant < ApplicationRecord
 
 
   validates :name, presence: true
+  validates :phone_number, presence: true
   validates :address, presence: true
   validates :category, inclusion: { in: CATEGORIES }, presence: true
 end
